@@ -1,0 +1,13 @@
+
+The classifier implemented uses Support Vector Machines (Linear Kernel).
+
+Pre-processing:
+===============
+1. Looking at the features, there are 23 features in total (ignoring the answer_id and answer_quality which are the first two attributes).
+2. Features 3, 10, 13, 14, 15, 16, 17, 19 are binary valued. Hence they have been removed as part of pre-processing
+3. Features 22 and 23 are zero valued. They have also been removed as they wouldn't contribute to classification
+4. Data has been standardized (z-score transformation)
+
+Classification:
+================
+For training the model, 10-fold cross-validation has been used. 
